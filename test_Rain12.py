@@ -18,7 +18,7 @@ parser.add_argument("--logdir", type=str, default="logs/Rain100L", help='path of
 parser.add_argument("--data_path",type=str, default="./test/test12",help='path to test data')
 parser.add_argument("--save_path", type=str, default="results_Rain12", help='path to save results')
 parser.add_argument("--use_GPU", type=bool, default=True, help='use GPU or not')
-parser.add_argument("--gpu_id", type=str, default="1", help='GPU id')
+parser.add_argument("--gpu_id", type=str, default="0", help='GPU id')
 parser.add_argument("--intra_iter", type=int, default=7, help="Number of intra iteration")
 parser.add_argument("--inter_iter", type=int, default=7, help="Number of inter iteration")
 opt = parser.parse_args()
