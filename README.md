@@ -57,9 +57,9 @@ python train_Rain100L.py
 ```
 
 
-### 3) Statistics Indicator
+### 3) Evaluation metrics
 
-We also provide the MATLAB scripts to statistic the evaluation metric reported in the paper.
+We also provide the MATLAB scripts to compute the average PSNR and SSIM values reported in the paper.
  
 
 ```Matlab
