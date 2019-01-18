@@ -16,11 +16,14 @@ In this paper, we propose a dual recursive network (DRN) for fast image derainin
 
 ## Datasets
 
-DRN is evaluated on three datasets*: Rain100H [1], Rain100L [1] and Rain12 [2]. Please download the testing datasets from [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg), and place the folders in `./test/`.
+DRN is evaluated on three datasets*: Rain100H [1], Rain100L [1] and Rain12 [2]. Please download the testing datasets from [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg), and place the unzipped folders into `./test/`.
 
-To train the models, please download training datasets: RainTrainH [1] and RainTrainL [1] from [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg), and place them into `./train/`. 
+To train the models, please download training datasets: RainTrainH [1] and RainTrainL [1] from [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg), and place the unzipped folders into `./train/`. 
 
-*_We note that (i) The datasets in the website of [1] seem to be modified. But the models and results in recent papers are all based on the previous version, and thus we upload the original training and testing datasets to [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg). 
+*_We note that:
+
+(i) The datasets in the website of [1] seem to be modified. But the models and results in recent papers are all based on the previous version, and thus we upload the original training and testing datasets to [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg). 
+
 (ii) For RainTrainH, we strictly exclude 546 rainy images that have the same background contents with testing images.
 Our DRN is trained on remaining 1,254 training samples._
 
@@ -29,7 +32,7 @@ Our DRN is trained on remaining 1,254 training samples._
 
 ### 1) Testing
 
-We have placed our pre-trained models in `./logs/`.
+We have placed our pre-trained models into `./logs/`.
 
 test on Rain100H :
 ```bash
@@ -74,7 +77,7 @@ We also provide the MATLAB scripts to compute the average PSNR and SSIM values r
 
 ### Model Configuration
 
-The following tables provide the documentation for all the options available in the configuration file:
+The following tables provide the configurations of options. 
 
 #### Training Mode Configurations
 
@@ -84,7 +87,7 @@ batchSize              | 16            | Training batch size
 intra_iter             | 7             | Number of intra iteration
 inter_iter             | 7             | Number of inter iteration
 epochs                 | 100           | Number of training epochs
-milestone              | [30,50,80]    | When to decay learning rate; should be less than epochs 
+milestone              | [30,50,80]    | When to decay learning rate 
 lr                     | 1e-3          | Initial learning rate
 save_freq              | 1             | save intermediate model
 use_GPU                | True          | use GPU or not
@@ -97,7 +100,7 @@ Option                 |Default           | Description
 use_GPU                | True             | use GPU or not
 gpu_id                 | 0                | GPU id
 inter_iter             | 7                | Number of unfolding stages
-intra_iter             | 7                | Number of recursive computation of ResBlock
+intra_iter             | 7                | Number of recursive ResBlock
 
 ## References
 [1] Yang W, Tan RT, Feng J, Liu J, Guo Z, Yan S. Deep joint rain detection and removal from a single image. In IEEE CVPR 2017.
