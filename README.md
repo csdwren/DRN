@@ -3,7 +3,7 @@
 ### Introduction:
 In this paper, we propose a dual recursive network (DRN) for fast image deraining, which can achieve superior or comparable deraining performance compared with state-of-the-art methods but significantly reduce network parameters. Specifically, the proposed DRN utilizes a ResNet with only 4 convolutional layers. The ResNet can be recursively unfolded to gradually remove rain streaks in multiple stages. To further strengthen the model capability, recursive computation is also employed in each stage. In particular, the intermediate 2-layer residual block (ResBlock) can be repeately unfolded several times.
  
-<img src="examples/rain-028.png" width="367px"/> 
+<img src="examples/rain-028.png" width="367px"/> <img src="examples/DRN-028.png" width="367px"/> 
 
 ## Prerequisites
 - Python 3.6
