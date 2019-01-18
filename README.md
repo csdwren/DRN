@@ -15,7 +15,7 @@ In this paper, we propose a dual recursive network (DRN) for fast image derainin
 
 ## Datasets
 
-DRN is evaluated on three datasets*: Rain100H [1], Rain100L [1] and Rain12 [2]. Please download the testing dataset from [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg), and place the folders in `./test/`.
+DRN is evaluated on three datasets*: Rain100H [1], Rain100L [1] and Rain12 [2]. Please download the testing datasets from [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg), and place the folders in `./test/`.
 
 To train the models, please download training datasets: RainTrainH [1] and RainTrainL [1] from [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg), and place them into `./train/`. 
 
