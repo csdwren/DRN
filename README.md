@@ -15,9 +15,9 @@ In this paper, we propose a dual recursive network (DRN) for fast image derainin
 
 ## Datasets
 
-DRN is evaluated on three datasets Rain100H [1], Rain100L [1] and Rain12 [2]. Please download the testing dataset from [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg), and place the folders in `./test/`.
+DRN is evaluated on three datasets*: Rain100H [1], Rain100L [1] and Rain12 [2]. Please download the testing dataset from [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg), and place the folders in `./test/`.
 
-To train the models, please download training datasets: RainTrainH* [1] and RainTrainL [1] from [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg), and place them into `./train/`. 
+To train the models, please download training datasets: RainTrainH [1] and RainTrainL [1] from [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg), and place them into `./train/`. 
 
 *_We note that (i) The datasets in the website of [1] seem to be modified. But the models and results in recent papers are all based on the previous version, and thus we upload the original training and testing datasets to [BaiduYun](https://pan.baidu.com/s/1J0q6Mrno9aMCsaWZUtmbkg). 
 (ii) For RainTrainH, we strictly exclude 546 rainy images that have the same background contents with testing images.
@@ -25,7 +25,7 @@ Our DRN is trained on remaining 1,254 training samples._
 
 
 ## Getting Started
-We have placed our pre-training models in `./logs/Rain100H_inter7_intra7` and `./logs/Rain100L_inter7_intra7` respectively. You can test these pre-trained models directly.
+We have placed our pre-trained models in `./logs/`. You can test these pre-trained models directly.
 
 ### 1) Testing
 
