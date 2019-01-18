@@ -71,6 +71,7 @@ We also provide the MATLAB scripts to compute the average PSNR and SSIM values r
  run statistic_Rain100L.m
  run statistic_Rain12.m
 ```
+
 ### Model Configuration
 
 The following tables provide the documentation for all the options available in the configuration file:
@@ -83,7 +84,7 @@ batchSize              | 16            | Training batch size
 intra_iter             | 7             | Number of intra iteration
 inter_iter             | 7             | Number of inter iteration
 epochs                 | 100           | Number of training epochs
-milestone              | [30,50,80]   | When to decay learning rate; should be less than epochs 
+milestone              | [30,50,80]    | When to decay learning rate; should be less than epochs 
 lr                     | 1e-3          | Initial learning rate
 save_freq              | 1             | save intermediate model
 use_GPU                | True          | use GPU or not
@@ -95,8 +96,8 @@ Option                 |Default           | Description
 -----------------------|------------------|------------
 use_GPU                | True             | use GPU or not
 gpu_id                 | 0                | GPU id
-inter_iter             | 7                | Number of inter iteration
-intra_iter             | 7                | Number of intra iteration
+inter_iter             | 7                | Number of unfolding stages
+intra_iter             | 7                | Number of recursive computation of ResBlock
 
 ## References
 [1] Yang W, Tan RT, Feng J, Liu J, Guo Z, Yan S. Deep joint rain detection and removal from a single image. In IEEE CVPR 2017.
