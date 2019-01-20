@@ -47,6 +47,11 @@ test on Rain12 :
 python test_Rain12.py 
 ```
 
+We have placed four real rainy images into `./test/real`, you can test on real rainy images:
+```bash
+python test_real.py 
+```
+
 ### 2) Training
 
 Read the [configuration](#model-configuration) guide for more information on model configuration.
