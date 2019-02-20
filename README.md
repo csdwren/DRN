@@ -1,7 +1,7 @@
 ## [DUAL RECURSIVE NETWORK FOR FAST IMAGE DERAINING](https://csdwren.github.io/papers/DRN.pdf)
 
 ### Introduction
-In this paper, we propose a dual recursive network (DRN) for fast image deraining, which can achieve superior or comparable deraining performance compared with state-of-the-art methods but significantly reduce network parameters. Specifically, the proposed DRN utilizes a ResNet with only 4 convolutional layers. The ResNet can be recursively unfolded to gradually remove rain streaks in multiple stages. To further strengthen the model capability, recursive computation is also employed in each stage. In particular, the intermediate 2-layer residual block (ResBlock) can be repeately unfolded several times.
+In this paper, we propose a dual recursive network (DRN) for fast image deraining as well as comparable or superior deraining performance compared with state-of-the-art approaches. Specifically, our DRN utilizes a residual network (ResNet) with only 2 residual blocks (ResBlock), which is recursively unfolded to remove rain streaks in multiple stages. Meanwhile, the 2 ResBlocks can be recursively computed in one stage, forming the dual recursive network. Experimental results show that DRN is very computationally efficient and can achieve favorable deraining results on both synthetic and real rainy images.
  
 <img src="examples/rain-021.jpg" width="367px"/> <img src="examples/DRN-021.jpg" width="367px"/> 
 <img src="examples/rain-024.jpg" width="367px"/> <img src="examples/DRN-024.jpg" width="367px"/> 
